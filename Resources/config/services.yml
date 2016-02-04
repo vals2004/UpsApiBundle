@@ -1,0 +1,95 @@
+services:
+
+    ups.shipping:
+        class: Octante\UpsAPIBundle\Library\ShippingWrapper
+        factory: [Octante\UpsAPIBundle\Services\ShippingFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.address_validation:
+        class: Octante\UpsAPIBundle\Library\AddressValidationWrapper
+        factory: [Octante\UpsAPIBundle\Services\AddressValidationFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.quantum_view:
+        class: Octante\UpsAPIBundle\Library\QuantumViewWrapper
+        factory: [Octante\UpsAPIBundle\Services\QuantumViewFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.tracking:
+        class: Octante\UpsAPIBundle\Library\TrackingWrapper
+        factory: [Octante\UpsAPIBundle\Services\TrackingFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.rate:
+        class: Octante\UpsAPIBundle\Library\RateWrapper
+        factory: [Octante\UpsAPIBundle\Services\RateFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+
+    ups.timeintransit:
+        class: Octante\UpsAPIBundle\Library\TimeInTransitWrapper
+        factory: [Octante\UpsAPIBundle\Services\TimeInTransitFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.locator:
+        class: Octante\UpsAPIBundle\Library\LocatorWrapper
+        factory: [Octante\UpsAPIBundle\Services\LocatorFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.tradeability:
+        class: Octante\UpsAPIBundle\Library\TradeabilityWrapper
+        factory: [Octante\UpsAPIBundle\Services\TradeabilityFactory, create]
+        arguments:
+            - '%ups.accesskey%'
+            - '%ups.userId%'
+            - '%ups.password%'
+            - '@ups.logger_class'
+            - '%ups.useintegration%'
+            - '%ups.request_class%'
+
+    ups.logger_class:
+        class: %ups.logger%
+        arguments:
+           - 'ups'
+        tags:
+            - { name: monolog.logger, channel: ups_logger }

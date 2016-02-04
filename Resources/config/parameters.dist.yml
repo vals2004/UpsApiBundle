@@ -1,0 +1,12 @@
+ups.endpoints.rate: https://wwwcie.ups.com/webservices/Rate
+ups.endpoints.shipping: https://wwwcie.ups.com/webservices/Ship
+ups.endpoints.track: https://wwwcie.ups.com/webservices/Track
+
+ups.accesskey: accesskey
+ups.userId: 1234
+ups.password: ThisIsASecretPassword
+
+ups.useintegration: false
+ups.request_class: ~
+
+ups.logger: Monolog\Logger
