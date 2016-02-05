@@ -1,6 +1,6 @@
 ## Shipping Class.
 
-The Shipping Class allow you to ship a package using the UPS Tracking API. Shipping needs to steps, first you need to send
+The Shipping Class allow you to ship a package using the UPS Tracking API. Shipping needs two steps, first you need to send
 a confirm request and second an accept request.
 
 <a name="tracking-class-example"></a>
