@@ -138,6 +138,6 @@ Confirm parameters are:
  * `labelSpec` (Optional) LabelSpecification data
  * `receiptSpec` (Optional) ShipmentRequestReceiptSpecification data.
  
- Accept parameters are:
+Accept parameters are:
  
  * `shipmentDigest` The UPS Shipment Digest received from a ShipConfirm request.
