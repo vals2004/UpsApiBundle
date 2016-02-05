@@ -88,7 +88,7 @@ services:
             - '%ups.request_class%'
 
     ups.logger_class:
-        class: %ups.logger%
+        class: Monolog\Logger
         arguments:
            - 'ups'
         tags:
