@@ -99,4 +99,4 @@ Requests & responses (including XML, no access keys) are logged at DEBUG level. 
 <a name="license-section"></a>
 ## License
 
-PHP UPS API is licensed under [The MIT License (MIT)](LICENSE).
+PHP UPS API is licensed under [The MIT License (MIT)](https://github.com/octante/UpsApiBundle/blob/master/LICENCE).
