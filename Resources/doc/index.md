@@ -75,7 +75,7 @@ ups.endpoints.track: https://wwwcie.ups.com/webservices/Track
 ups.accesskey: accesskey
 ups.userId: 1234
 ups.password: ThisIsASecretPassword
-ups.useintegration: false
+ups.useintegration: true
 ups.request_class: ~
 ups.logger: Monolog\Logger
 ```
