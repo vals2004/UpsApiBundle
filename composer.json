@@ -1,8 +1,8 @@
 {
-  "name": "octante/shipping-api-bundle",
+  "name": "octante/ups-api-bundle",
   "type": "symfony-bundle",
-  "description": "Shipping API Bundle for Symfony2 and Symfony3",
-  "keywords": ["ups", "dhl", "shipping services", "symfony"],
+  "description": "UPS API Bundle for Symfony2 and Symfony3",
+  "keywords": ["ups", "ups bundle", "symfony", "shipping"],
   "homepage": "https://github.com/octante/UpsAPIBundle",
   "license": "MIT",
   "authors": [{
