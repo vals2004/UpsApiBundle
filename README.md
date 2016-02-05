@@ -17,4 +17,4 @@ This bundle simplifies UPS integration in symfony projects.
 
 ## License ##
 
-See [LICENSE](https://github.com/octante/UpsAPIBundle/blob/master/LICENSE).
+See [LICENSE](https://github.com/octante/UpsApiBundle/blob/master/LICENCE).
