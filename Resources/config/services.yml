@@ -22,7 +22,7 @@ services:
             - '%ups.useintegration%'
             - '%ups.request_class%'
 
-    ups.quantum_view:
+    ups.quantumview:
         class: Octante\UpsAPIBundle\Library\QuantumViewWrapper
         factory: [Octante\UpsAPIBundle\Services\QuantumViewFactory, create]
         arguments:
