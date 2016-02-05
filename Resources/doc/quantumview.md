@@ -7,7 +7,7 @@ The QuantumView Class allow you to request a Quantum View Data subscription.
 
 ```php
     
-    $quantumView = $this->getContainer()->ge('ups.quantumview');
+    $quantumView = $this->getContainer()->get('ups.quantumview');
     
     try {
         // Get the subscription for all events for the last hour

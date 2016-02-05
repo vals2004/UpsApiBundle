@@ -1,5 +1,11 @@
 ## Shipping Class.
 
+The Shipping Class allow you to ship a package using the UPS Tracking API. Shipping needs to steps, first you need to send
+a confirm request and second an accept request.
+
+<a name="tracking-class-example"></a>
+### Example using Shipping class
+
 ``` php
 <?php
 
@@ -121,3 +127,17 @@
         $error = $e->getMessage();
     }
 ```
+
+<a name="tracking-class-parameters"></a>
+### Parameters
+
+Confirm parameters are:
+
+ * `validation` A UPS_Shipping::REQ_* constant (or null)
+ * `shipment` Shipment data container.
+ * `labelSpec` (Optional) LabelSpecification data
+ * `receiptSpec` (Optional) ShipmentRequestReceiptSpecification data.
+ 
+ Accept parameters are:
+ 
+ * `shipmentDigest` The UPS Shipment Digest received from a ShipConfirm request.

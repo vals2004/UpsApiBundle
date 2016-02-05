@@ -40,15 +40,14 @@ The Locator class allows you to search for UPS Access Point locations.
     $locatorRequest->setUnitOfMeasurement($unitOfMeasurement);
     
     try {
-
-    // Get the locations
-    $locator = $this->getContainer()->get('ups.locator');
-    $locations = $locator->getLocations($locatorRequest, \Ups\Locator::OPTION_UPS_ACCESS_POINT_LOCATIONS);
-
-	foreach($locations->SearchResults->DropLocation as $location) {
-		// Your code here
-		var_dump($location);
-	}
+        // Get the locations
+        $locator = $this->getContainer()->get('ups.locator');
+        $locations = $locator->getLocations($locatorRequest, \Ups\Locator::OPTION_UPS_ACCESS_POINT_LOCATIONS);
+    
+        foreach($locations->SearchResults->DropLocation as $location) {
+            // Your code here
+            var_dump($location);
+        }
 
     } catch (Exception $e) {
         var_dump($e);
