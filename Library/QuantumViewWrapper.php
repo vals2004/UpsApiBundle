@@ -33,12 +33,15 @@ class QuantumViewWrapper
     }
 
     /**
-     * @param string|null      $accessKey      UPS License Access Key
-     * @param string|null      $userId         UPS User ID
-     * @param string|null      $password       UPS User Password
-     * @param bool             $useIntegration Determine if we should use production or CIE URLs.
-     * @param RequestInterface $request
-     * @param LoggerInterface PSR3 compatible logger (optional)
+     * @param string $name
+     * @param string $beginDateTime
+     * @param string $endDateTime
+     * @param string $fileName
+     * @param string $bookmark
+     *
+     * @return \ArrayObject
+     *
+     * @throws \Exception
      */
     public function getSubscription(
         $name = null,
