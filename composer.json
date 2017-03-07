@@ -1,5 +1,5 @@
 {
-  "name": "octante/ups-api-bundle",
+  "name": "vals2004/ups-api-bundle",
   "type": "symfony-bundle",
   "description": "UPS API Bundle for Symfony2 and Symfony3",
   "keywords": ["ups", "ups bundle", "symfony", "shipping"],
